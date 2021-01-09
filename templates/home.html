@@ -7,7 +7,7 @@
     <img src="{% static 'photo/profile.jpg'%}" alt="profile" class="img-thumbnail" width="250px" height="150px">
 </div>
 <div>
-    <h1 class="mt-5 text-white"> hello,</h1>
+    <h1 class="mt-5 text-white st-font"> hello,</h1>
     <p style="text-indent: 100px;" class="text-white "> <b>Lorem </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur inventore deserunt
         voluptatum, blanditiis recusandae repellendus numquam, cupiditate totam aspernatur explicabo eius esse quidem
         dignissimos beatae quibusdam consequatur dolore similique nostrum repudiandae eos voluptas est ea nisi nam. Est
@@ -31,8 +31,8 @@
         repudiandae! Error iusto quam, dolorem sit odio iste iure aperiam! Corrupti praesentium adipisci expedita?
     </p>
  <div class="text-center"> 
-    <a href="" class="btn btn-warning my-3 p-2">hire me</a>
-    <a href="" class="btn btn-info mx-5 my-3 p-2">contact</a>
+    <a href="{% url 'contact' %}" class="btn btn-warning my-3 p-2">hire me</a>
+    <a href="{% url 'contact' %}" class="btn btn-info mx-5 my-3 p-2">contact</a>
 </div>
 </div>
 

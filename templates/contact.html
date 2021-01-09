@@ -5,66 +5,69 @@
 {% block body %}
 
 <div class="text-white mt-3 ">
-    <h1>Contact Me:</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum pariatur eaque eos culpa possimus, unde voluptas repellendus error at eius fuga voluptate esse rerum mollitia ducimus vel nesciunt recusandae?
-    </p>
-    <hr class="boder border-white ">
+  <h1>Contact Me:</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum pariatur eaque eos culpa possimus, unde
+    voluptas repellendus error at eius fuga voluptate esse rerum mollitia ducimus vel nesciunt recusandae?
+  </p>
+  <hr class="boder border-white ">
 </div>
 
-<div class="container-fluid mt-5 ">
+<div class="container-fluid mt-5 mb-0 ">
   <div class="row">
     <div class="col-sm-9">
-      <form action="" method="post"  >
-        <div class="mb-3 text-white" >
-            <label for="exampleFormControlInput1" class="form-label">Your name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
-          </div>
-        <div class="mb-3 text-white" >
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3 text-white" >
-            <label for="exampleFormControlInput1" class="form-label">Your subject</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="subject">
-          </div>
-          <div class="mb-3 text-white" >
-            <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary text-center my-3">Submit</button>
-        
-    
-    </form>
-    
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlInput1" class="form-label">Your name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+        </div>
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlInput1" class="form-label">Your subject</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="subject">
+        </div>
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary text-center my-3">Submit</button>
+
+
+      </form>
+
     </div>
     <div class="col-sm-3  my-5">
-      <h5 class="text-white">+977-9817850274</h5>
-      <div class="text-center"> <i class="fas fa-phone fa-2x text-white"></i></div>
+      <h5 class="text-white ">+977-9817850274</h5>
+      <div class=" text-white text-center">
+       <i style="color:lime ;"  class="fas fa-phone fa-2x bg"></i>
+      </div>
       <h5 class="text-white my-4">er.ramsovit@gmail.com</h5>
-      <div class="text-center"> <i class="far fa-envelope fa-2x text-white"></i></div>
-
+      <div class="text-white text-center">
+        <i style="color:lime ;" class="far fa-envelope fa-2x "></i>
+      </div>
+      
     </div>
+
+
+
+  </div>
+  <div class="  text-white  fa-2x mx-5">
+
+    <div class="row ">
+      <div class="text-center mb-5 ">
   
-    
-    
+        <a class="text-warning" href="https://www.facebook.com/ramsovit.mahato.7"><i class="fab fa-facebook i-hover"></i></a>
+        <a class="text-warning" href="https://www.linkedin.com/in/erramsovit/"><i class="fab fa-linkedin mx-2 i-hover"></i></a>
+        <a class="text-warning" href="https://github.com/erramsovit"><i class="fab fa-github mx-2 i-hover"></i></a>
+        
+      </div>
+  
+    </div>
   </div>
 </div>
-
-
-<div class=" my-5 text-white  fa-2x mx-5">
- 
-  <div class="row ">
-<div  class="text-center">
-
-  <i class="fab fa-facebook"></i>
-  <i class="fab fa-linkedin mx-2"></i>
-  <i class="fab fa-github mx-2"></i>
-</div>
-  
-  </div>
- </div>
-
-
 
 {% endblock body %}
